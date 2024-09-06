@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7EB7BA72C8B0BDE00E05B53 /* Beyond_EarthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BA62C8B0BDE00E05B53 /* Beyond_EarthApp.swift */; };
+		C7EB7BA92C8B0BDE00E05B53 /* NasaApodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BA82C8B0BDE00E05B53 /* NasaApodView.swift */; };
+		C7EB7BAB2C8B0BDF00E05B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EB7BAA2C8B0BDF00E05B53 /* Assets.xcassets */; };
+		C7EB7BAE2C8B0BDF00E05B53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EB7BAD2C8B0BDF00E05B53 /* Preview Assets.xcassets */; };
+		C7EB7BBB2C8B0C6E00E05B53 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BBA2C8B0C6E00E05B53 /* URLSession.swift */; };
+		C7EB7BBD2C8B0C8300E05B53 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BBC2C8B0C8300E05B53 /* NetworkStatus.swift */; };
+		C7EB7BBF2C8B0C9600E05B53 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BBE2C8B0C9600E05B53 /* Network.swift */; };
+		C7EB7BC12C8B0CA800E05B53 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BC02C8B0CA800E05B53 /* NetworkError.swift */; };
+		C7EB7BC32C8B0CC000E05B53 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BC22C8B0CC000E05B53 /* URL.swift */; };
+		C7EB7BC52C8B0CE200E05B53 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BC42C8B0CE200E05B53 /* URLRequest.swift */; };
+		C7EB7BC72C8B0D2400E05B53 /* NasaVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BC62C8B0D2400E05B53 /* NasaVM.swift */; };
+		C7EB7BC92C8B0D6700E05B53 /* NasaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BC82C8B0D6700E05B53 /* NasaModel.swift */; };
+		C7EB7BCD2C8B728400E05B53 /* NasaAsteroidsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BCC2C8B728400E05B53 /* NasaAsteroidsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C7EB7BA32C8B0BDE00E05B53 /* Beyond Earth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beyond Earth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7EB7BA62C8B0BDE00E05B53 /* Beyond_EarthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beyond_EarthApp.swift; sourceTree = "<group>"; };
+		C7EB7BA82C8B0BDE00E05B53 /* NasaApodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaApodView.swift; sourceTree = "<group>"; };
+		C7EB7BAA2C8B0BDF00E05B53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7EB7BAD2C8B0BDF00E05B53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7EB7BBA2C8B0C6E00E05B53 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		C7EB7BBC2C8B0C8300E05B53 /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		C7EB7BBE2C8B0C9600E05B53 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C7EB7BC02C8B0CA800E05B53 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C7EB7BC22C8B0CC000E05B53 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		C7EB7BC42C8B0CE200E05B53 /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		C7EB7BC62C8B0D2400E05B53 /* NasaVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaVM.swift; sourceTree = "<group>"; };
+		C7EB7BC82C8B0D6700E05B53 /* NasaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaModel.swift; sourceTree = "<group>"; };
+		C7EB7BCC2C8B728400E05B53 /* NasaAsteroidsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAsteroidsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7EB7BA02C8B0BDE00E05B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7EB7B9A2C8B0BDE00E05B53 = {
+			isa = PBXGroup;
+			children = (
+				C7EB7BA52C8B0BDE00E05B53 /* Beyond Earth */,
+				C7EB7BA42C8B0BDE00E05B53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7EB7BA42C8B0BDE00E05B53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7EB7BA32C8B0BDE00E05B53 /* Beyond Earth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7EB7BA52C8B0BDE00E05B53 /* Beyond Earth */ = {
+			isa = PBXGroup;
+			children = (
+				C7EB7BA62C8B0BDE00E05B53 /* Beyond_EarthApp.swift */,
+				C7EB7BB92C8B0C2500E05B53 /* Views */,
+				C7EB7BB82C8B0C1300E05B53 /* Components */,
+				C7EB7BB72C8B0C0D00E05B53 /* ViewModels */,
+				C7EB7BB62C8B0C0700E05B53 /* Models */,
+				C7EB7BB42C8B0BE900E05B53 /* Network */,
+				C7EB7BAA2C8B0BDF00E05B53 /* Assets.xcassets */,
+				C7EB7BAC2C8B0BDF00E05B53 /* Preview Content */,
+			);
+			path = "Beyond Earth";
+			sourceTree = "<group>";
+		};
+		C7EB7BAC2C8B0BDF00E05B53 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C7EB7BAD2C8B0BDF00E05B53 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C7EB7BB42C8B0BE900E05B53 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C7EB7BBE2C8B0C9600E05B53 /* Network.swift */,
+				C7EB7BBC2C8B0C8300E05B53 /* NetworkStatus.swift */,
+				C7EB7BC02C8B0CA800E05B53 /* NetworkError.swift */,
+				C7EB7BC22C8B0CC000E05B53 /* URL.swift */,
+				C7EB7BBA2C8B0C6E00E05B53 /* URLSession.swift */,
+				C7EB7BC42C8B0CE200E05B53 /* URLRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C7EB7BB62C8B0C0700E05B53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7EB7BC82C8B0D6700E05B53 /* NasaModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C7EB7BB72C8B0C0D00E05B53 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C7EB7BC62C8B0D2400E05B53 /* NasaVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C7EB7BB82C8B0C1300E05B53 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C7EB7BB92C8B0C2500E05B53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7EB7BA82C8B0BDE00E05B53 /* NasaApodView.swift */,
+				C7EB7BCC2C8B728400E05B53 /* NasaAsteroidsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7EB7BA22C8B0BDE00E05B53 /* Beyond Earth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7EB7BB12C8B0BDF00E05B53 /* Build configuration list for PBXNativeTarget "Beyond Earth" */;
+			buildPhases = (
+				C7EB7B9F2C8B0BDE00E05B53 /* Sources */,
+				C7EB7BA02C8B0BDE00E05B53 /* Frameworks */,
+				C7EB7BA12C8B0BDE00E05B53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Beyond Earth";
+			productName = "Beyond Earth";
+			productReference = C7EB7BA32C8B0BDE00E05B53 /* Beyond Earth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7EB7B9B2C8B0BDE00E05B53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					C7EB7BA22C8B0BDE00E05B53 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = C7EB7B9E2C8B0BDE00E05B53 /* Build configuration list for PBXProject "Beyond Earth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7EB7B9A2C8B0BDE00E05B53;
+			productRefGroup = C7EB7BA42C8B0BDE00E05B53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7EB7BA22C8B0BDE00E05B53 /* Beyond Earth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7EB7BA12C8B0BDE00E05B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EB7BAE2C8B0BDF00E05B53 /* Preview Assets.xcassets in Resources */,
+				C7EB7BAB2C8B0BDF00E05B53 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7EB7B9F2C8B0BDE00E05B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EB7BC92C8B0D6700E05B53 /* NasaModel.swift in Sources */,
+				C7EB7BCD2C8B728400E05B53 /* NasaAsteroidsView.swift in Sources */,
+				C7EB7BBF2C8B0C9600E05B53 /* Network.swift in Sources */,
+				C7EB7BC72C8B0D2400E05B53 /* NasaVM.swift in Sources */,
+				C7EB7BBD2C8B0C8300E05B53 /* NetworkStatus.swift in Sources */,
+				C7EB7BA92C8B0BDE00E05B53 /* NasaApodView.swift in Sources */,
+				C7EB7BC32C8B0CC000E05B53 /* URL.swift in Sources */,
+				C7EB7BC12C8B0CA800E05B53 /* NetworkError.swift in Sources */,
+				C7EB7BA72C8B0BDE00E05B53 /* Beyond_EarthApp.swift in Sources */,
+				C7EB7BBB2C8B0C6E00E05B53 /* URLSession.swift in Sources */,
+				C7EB7BC52C8B0CE200E05B53 /* URLRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C7EB7BAF2C8B0BDF00E05B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7EB7BB02C8B0BDF00E05B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7EB7BB22C8B0BDF00E05B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Beyond Earth/Preview Content\"";
+				DEVELOPMENT_TEAM = 72CAUS7668;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AlvsiOSdev.Beyond-Earth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7EB7BB32C8B0BDF00E05B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Beyond Earth/Preview Content\"";
+				DEVELOPMENT_TEAM = 72CAUS7668;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AlvsiOSdev.Beyond-Earth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7EB7B9E2C8B0BDE00E05B53 /* Build configuration list for PBXProject "Beyond Earth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7EB7BAF2C8B0BDF00E05B53 /* Debug */,
+				C7EB7BB02C8B0BDF00E05B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7EB7BB12C8B0BDF00E05B53 /* Build configuration list for PBXNativeTarget "Beyond Earth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7EB7BB22C8B0BDF00E05B53 /* Debug */,
+				C7EB7BB32C8B0BDF00E05B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7EB7B9B2C8B0BDE00E05B53 /* Project object */;
+}
