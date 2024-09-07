@@ -9,7 +9,7 @@ import Foundation
 
 @Observable
 class NasaVM: ObservableObject {
-    var network = Network()
+    let network = Network()
     var errorMsg: String = ""
     var showAlert: Bool = false
     

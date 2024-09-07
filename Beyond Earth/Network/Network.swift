@@ -40,4 +40,8 @@ struct Network: DataInteractor {
     func getNasaAsteorids() async throws -> NasaAsteroids {
         try await getJSON(request: .get(url: .getAsteroids()), type: NasaAsteroids.self)
     }
+    
+    func getEonetEvents() async throws -> EONETModel {
+        try await getJSON(request: .get(url: .getEonetEvents()), type: EONETModel.self)
+    }
 }

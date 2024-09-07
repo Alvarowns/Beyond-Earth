@@ -13,6 +13,14 @@ struct NasaAsteroidsView: View {
     var body: some View {
         List(viewModel.asteroids.nearEarthObjects.items, id: \.self) { item in
                 VStack(alignment: .leading) {
+                    Text("Closest Asteroids to Earth on \(item.closeApproachData.first?.date ?? "")")
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .font(.title)
+                        .bold()
+                        .multilineTextAlignment(.center)
+                    
+                    Divider()
+                    
                     Text(item.name)
                         .font(.title2)
                         .bold()
@@ -32,7 +40,7 @@ struct NasaAsteroidsView: View {
                             .bold()
                         Spacer()
                         Text(item.hazardous ? "Yes" : "No")
-                            .foregroundStyle(item.hazardous ? .red : .primary)
+                            .foregroundStyle(item.hazardous ? .red : .green)
                             .fontWeight(.semibold)
                     }
                     
@@ -59,7 +67,7 @@ struct NasaAsteroidsView: View {
                         Text("Close approach:")
                             .bold()
                         
-                            Text("Date: \(item.closeApproachData.first?.date ?? "")")
+                        Text("Date: \(item.closeApproachData.first?.dateFull ?? "")")
                                 .fontWeight(.semibold)
                                 .frame(maxWidth: .infinity, alignment: .trailing)
                         
@@ -75,7 +83,6 @@ struct NasaAsteroidsView: View {
         }
         .listStyle(.plain)
         .listRowSpacing(10)
-        .navigationTitle("Close Asteroids To Earth")
     }
 }
 

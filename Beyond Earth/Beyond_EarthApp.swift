@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct Beyond_EarthApp: App {
     @StateObject private var nasaVM = NasaVM()
+    @StateObject private var eonetVM = EONETVM()
     
     var body: some Scene {
         WindowGroup {
-            NasaApodView()
+            TabBarView()
         }
         .environmentObject(NasaVM())
+        .environmentObject(EONETVM())
     }
 }

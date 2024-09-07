@@ -19,6 +19,10 @@ struct NasaApodView: View {
                     .font(.title)
                     .bold()
                 
+                Text("Astronomic Picture Of The Day")
+                    .foregroundStyle(.secondary)
+                    .font(.footnote)
+                
                 HStack {
                     Text("Date: \(apod.date)")
                     Spacer()

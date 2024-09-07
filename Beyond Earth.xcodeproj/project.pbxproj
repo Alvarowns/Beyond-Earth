@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C79CBA482C8C5D1300853C53 /* EONETModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79CBA472C8C5D1300853C53 /* EONETModel.swift */; };
+		C79CBA4A2C8C61FA00853C53 /* EONETVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79CBA492C8C61FA00853C53 /* EONETVM.swift */; };
+		C79CBA4C2C8C656500853C53 /* EONETView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79CBA4B2C8C656500853C53 /* EONETView.swift */; };
+		C79CBA4E2C8CD85200853C53 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79CBA4D2C8CD85200853C53 /* TabBarView.swift */; };
 		C7EB7BA72C8B0BDE00E05B53 /* Beyond_EarthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BA62C8B0BDE00E05B53 /* Beyond_EarthApp.swift */; };
 		C7EB7BA92C8B0BDE00E05B53 /* NasaApodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB7BA82C8B0BDE00E05B53 /* NasaApodView.swift */; };
 		C7EB7BAB2C8B0BDF00E05B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EB7BAA2C8B0BDF00E05B53 /* Assets.xcassets */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C79CBA472C8C5D1300853C53 /* EONETModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EONETModel.swift; sourceTree = "<group>"; };
+		C79CBA492C8C61FA00853C53 /* EONETVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EONETVM.swift; sourceTree = "<group>"; };
+		C79CBA4B2C8C656500853C53 /* EONETView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EONETView.swift; sourceTree = "<group>"; };
+		C79CBA4D2C8CD85200853C53 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		C7EB7BA32C8B0BDE00E05B53 /* Beyond Earth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beyond Earth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EB7BA62C8B0BDE00E05B53 /* Beyond_EarthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beyond_EarthApp.swift; sourceTree = "<group>"; };
 		C7EB7BA82C8B0BDE00E05B53 /* NasaApodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaApodView.swift; sourceTree = "<group>"; };
@@ -106,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				C7EB7BC82C8B0D6700E05B53 /* NasaModel.swift */,
+				C79CBA472C8C5D1300853C53 /* EONETModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -114,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				C7EB7BC62C8B0D2400E05B53 /* NasaVM.swift */,
+				C79CBA492C8C61FA00853C53 /* EONETVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -130,6 +140,8 @@
 			children = (
 				C7EB7BA82C8B0BDE00E05B53 /* NasaApodView.swift */,
 				C7EB7BCC2C8B728400E05B53 /* NasaAsteroidsView.swift */,
+				C79CBA4B2C8C656500853C53 /* EONETView.swift */,
+				C79CBA4D2C8CD85200853C53 /* TabBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,13 +219,17 @@
 				C7EB7BC92C8B0D6700E05B53 /* NasaModel.swift in Sources */,
 				C7EB7BCD2C8B728400E05B53 /* NasaAsteroidsView.swift in Sources */,
 				C7EB7BBF2C8B0C9600E05B53 /* Network.swift in Sources */,
+				C79CBA4A2C8C61FA00853C53 /* EONETVM.swift in Sources */,
+				C79CBA482C8C5D1300853C53 /* EONETModel.swift in Sources */,
 				C7EB7BC72C8B0D2400E05B53 /* NasaVM.swift in Sources */,
 				C7EB7BBD2C8B0C8300E05B53 /* NetworkStatus.swift in Sources */,
 				C7EB7BA92C8B0BDE00E05B53 /* NasaApodView.swift in Sources */,
+				C79CBA4C2C8C656500853C53 /* EONETView.swift in Sources */,
 				C7EB7BC32C8B0CC000E05B53 /* URL.swift in Sources */,
 				C7EB7BC12C8B0CA800E05B53 /* NetworkError.swift in Sources */,
 				C7EB7BA72C8B0BDE00E05B53 /* Beyond_EarthApp.swift in Sources */,
 				C7EB7BBB2C8B0C6E00E05B53 /* URLSession.swift in Sources */,
+				C79CBA4E2C8CD85200853C53 /* TabBarView.swift in Sources */,
 				C7EB7BC52C8B0CE200E05B53 /* URLRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
