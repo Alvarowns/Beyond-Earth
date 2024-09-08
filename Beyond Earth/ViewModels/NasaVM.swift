@@ -14,7 +14,7 @@ class NasaVM: ObservableObject {
     var showAlert: Bool = false
     
     var apod: NasaAPOD = NasaAPOD(date: "", explanation: "", hdurl: "", mediaType: "", serviceVersion: "", title: "", url: "")
-    var asteroids: NasaAsteroids = NasaAsteroids(links: NasaAsteroids.Links(next: "", previous: "", url: ""), elementCount: 0, nearEarthObjects: NasaAsteroids.NearEarthObjects(items: []))
+    var asteroids: NasaAsteroids = NasaAsteroids(links: NasaAsteroids.Links(next: "", previous: "", url: ""), elementCount: 0, nearEarthObjects: ["" : []])
     
     init() {
         Task {

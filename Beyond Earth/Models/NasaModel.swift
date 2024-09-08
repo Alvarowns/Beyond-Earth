@@ -26,7 +26,7 @@ struct NasaAPOD: Codable {
 struct NasaAsteroids: Codable {
     let links: Links
     let elementCount: Int
-    let nearEarthObjects: NearEarthObjects
+    let nearEarthObjects: [String: [Asteroid]]
     
     struct Links: Codable {
         let next: String
@@ -36,14 +36,6 @@ struct NasaAsteroids: Codable {
         enum CodingKeys: String, CodingKey {
             case next, previous
             case url = "self"
-        }
-    }
-    
-    struct NearEarthObjects: Codable, Hashable {
-        let items: [Asteroid]
-        
-        enum CodingKeys: String, CodingKey {
-            case items = "2024-09-10"
         }
     }
     

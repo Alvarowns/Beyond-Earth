@@ -10,25 +10,27 @@ import MapKit
 
 struct EONETView: View {
     @EnvironmentObject private var viewModel: EONETVM
+    @StateObject private var publicFunctions = StaticFunctions()
     
     @State private var search: String = ""
     @State private var filtersSelectedNumber: Int = 0
     @State private var filterSelected: String?
     @State private var mapOrList: String = "Map"
-    @State private var longLoading: Bool = false
-    @State private var wildfireLongLoading: Bool = false
     
     var menuPicker: [String] = ["Wildfire", "Storm", "Volcano", "Ice"]
     
     var filteredSearch: [EONETModel.EONETEvent] {
+        let searchLowercased = search.lowercased()
+        let filterSelectedLowercased = filterSelected?.lowercased() ?? ""
+        
         if !search.isEmpty {
             if filterSelected == nil{
                 return viewModel.events.events.filter { event in
-                    event.title.lowercased().contains(search.lowercased())
+                    event.title.lowercased().contains(searchLowercased)
                 }
             } else {
                 return viewModel.events.events.filter { event in
-                    event.title.lowercased().contains(filterSelected?.lowercased() ?? "") && event.title.lowercased().contains(search.lowercased())
+                    event.title.lowercased().contains(filterSelectedLowercased) && event.title.lowercased().contains(searchLowercased)
                 }
             }
         } else {
@@ -36,7 +38,7 @@ struct EONETView: View {
                 return viewModel.events.events
             } else {
                 return viewModel.events.events.filter { event in
-                    event.title.lowercased().contains(filterSelected?.lowercased() ?? "")
+                    event.title.lowercased().contains(filterSelectedLowercased)
                 }
             }
         }
@@ -46,39 +48,63 @@ struct EONETView: View {
         NavigationStack {
             ZStack {
                 if mapOrList == "List" {
-                    List {
-                        ForEach(filteredSearch, id: \.self) { event in
-                            Text(event.title)
+                    ZStack {
+                        List {
+                            ForEach(filteredSearch, id: \.self) { event in
+                                Text(event.title)
+                            }
                         }
+                        .disabled(viewModel.isLoading ? true : false)
+                        
+                        PopoverEONET()
+                            .opacity(viewModel.isLoading ? 1.0 : 0.0)
                     }
                 } else if mapOrList == "Map" {
-                    Map {
-                        ForEach(filteredSearch, id: \.self) { event in
-                            let longitude = event.geometries.first?.coordinates.first
-                            let latitude = event.geometries.first?.coordinates.last
-                            
-                            let type = event.categories.first?.title
-                            
-                            Marker(event.title, coordinate: CLLocationCoordinate2D(latitude: latitude ?? 0, longitude: longitude ?? 0))
+                    ZStack {
+                        Map {
+                            ForEach(filteredSearch, id: \.self) { event in
+                                let longitude = event.geometries.first?.coordinates.first ?? 0
+                                let latitude = event.geometries.first?.coordinates.last ?? 0
+                                var image: String {
+                                    switch event.categories.first?.title {
+                                    case "Wildfires": "flame.circle.fill"
+                                    case "Volcanoes": "mountain.2.circle.fill"
+                                    case "Sea and Lake Ice": "snowflake.circle.fill"
+                                    case "Severe Storms": "cloud.bolt.rain.circle.fill"
+                                    default: "mappin.circle.fill"
+                                    }
+                                }
+                                
+                                var color: Color {
+                                    switch event.categories.first?.title {
+                                    case "Wildfires": .pink
+                                    case "Volcanoes": .brown
+                                    case "Sea and Lake Ice": .cyan
+                                    case "Severe Storms": .gray
+                                    default: .green
+                                    }
+                                }
+                                
+                                Marker(event.title, systemImage: image, coordinate:  CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
+                                    .tint(color)
+                            }
                         }
+                        .mapStyle(.imagery())
+                        .disabled(viewModel.isLoading ? true : false)
+                        .onTapGesture {
+                            publicFunctions.hideKeyboard()
+                        }
+                        
+                        PopoverEONET()
+                            .opacity(viewModel.isLoading ? 1.0 : 0.0)
                     }
                 }
             }
             .onAppear {
-                longLoading.toggle()
-            }
-            .alert("Depending on the number of events this page may take longer than expected to load",
-                   isPresented: $longLoading,
-                   actions: {
-                Button("Ok") {
-                    longLoading.toggle()
+                Task {
+                    await viewModel.getEonetEvents()
                 }
-            },
-                   message: {
-                Text(
-                    "In a few seconds you will see every marker!"
-                )
-            })
+            }
             .navigationTitle("Natural Events from EONET")
             .navigationBarTitleDisplayMode(.inline)
             .searchable(text: $search, prompt: "Search by city or natural event type")

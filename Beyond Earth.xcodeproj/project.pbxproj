@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7163D842C8D9798008F0139 /* PopoverEONET.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7163D832C8D9798008F0139 /* PopoverEONET.swift */; };
+		C7163D872C8D9BB4008F0139 /* StaticFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7163D862C8D9BB4008F0139 /* StaticFunctions.swift */; };
 		C79CBA482C8C5D1300853C53 /* EONETModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79CBA472C8C5D1300853C53 /* EONETModel.swift */; };
 		C79CBA4A2C8C61FA00853C53 /* EONETVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79CBA492C8C61FA00853C53 /* EONETVM.swift */; };
 		C79CBA4C2C8C656500853C53 /* EONETView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79CBA4B2C8C656500853C53 /* EONETView.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7163D832C8D9798008F0139 /* PopoverEONET.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverEONET.swift; sourceTree = "<group>"; };
+		C7163D862C8D9BB4008F0139 /* StaticFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFunctions.swift; sourceTree = "<group>"; };
 		C79CBA472C8C5D1300853C53 /* EONETModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EONETModel.swift; sourceTree = "<group>"; };
 		C79CBA492C8C61FA00853C53 /* EONETVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EONETVM.swift; sourceTree = "<group>"; };
 		C79CBA4B2C8C656500853C53 /* EONETView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EONETView.swift; sourceTree = "<group>"; };
@@ -58,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7163D852C8D9BA1008F0139 /* Static functions */ = {
+			isa = PBXGroup;
+			children = (
+				C7163D862C8D9BB4008F0139 /* StaticFunctions.swift */,
+			);
+			path = "Static functions";
+			sourceTree = "<group>";
+		};
 		C7EB7B9A2C8B0BDE00E05B53 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +95,7 @@
 				C7EB7BB72C8B0C0D00E05B53 /* ViewModels */,
 				C7EB7BB62C8B0C0700E05B53 /* Models */,
 				C7EB7BB42C8B0BE900E05B53 /* Network */,
+				C7163D852C8D9BA1008F0139 /* Static functions */,
 				C7EB7BAA2C8B0BDF00E05B53 /* Assets.xcassets */,
 				C7EB7BAC2C8B0BDF00E05B53 /* Preview Content */,
 			);
@@ -131,6 +144,7 @@
 		C7EB7BB82C8B0C1300E05B53 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C7163D832C8D9798008F0139 /* PopoverEONET.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -138,10 +152,10 @@
 		C7EB7BB92C8B0C2500E05B53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C79CBA4D2C8CD85200853C53 /* TabBarView.swift */,
 				C7EB7BA82C8B0BDE00E05B53 /* NasaApodView.swift */,
 				C7EB7BCC2C8B728400E05B53 /* NasaAsteroidsView.swift */,
 				C79CBA4B2C8C656500853C53 /* EONETView.swift */,
-				C79CBA4D2C8CD85200853C53 /* TabBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +233,8 @@
 				C7EB7BC92C8B0D6700E05B53 /* NasaModel.swift in Sources */,
 				C7EB7BCD2C8B728400E05B53 /* NasaAsteroidsView.swift in Sources */,
 				C7EB7BBF2C8B0C9600E05B53 /* Network.swift in Sources */,
+				C7163D842C8D9798008F0139 /* PopoverEONET.swift in Sources */,
+				C7163D872C8D9BB4008F0139 /* StaticFunctions.swift in Sources */,
 				C79CBA4A2C8C61FA00853C53 /* EONETVM.swift in Sources */,
 				C79CBA482C8C5D1300853C53 /* EONETModel.swift in Sources */,
 				C7EB7BC72C8B0D2400E05B53 /* NasaVM.swift in Sources */,

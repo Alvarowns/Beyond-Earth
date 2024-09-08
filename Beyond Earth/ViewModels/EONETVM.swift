@@ -13,19 +13,18 @@ class EONETVM: ObservableObject {
     var errorMsg: String = ""
     var showAlert: Bool = false
     
+    var isLoading: Bool = false
+    
     var events: EONETModel = EONETModel(title: "", description: "", link: "", events: [])
     
-    init() {
-        Task {
-            await getEonetEvents()
-        }
-    }
-    
     func getEonetEvents() async {
+        isLoading = true
+        
         do {
             let events = try await network.getEonetEvents()
             await MainActor.run {
                 self.events = events
+                isLoading = false
             }
         } catch {
                 await MainActor.run {
