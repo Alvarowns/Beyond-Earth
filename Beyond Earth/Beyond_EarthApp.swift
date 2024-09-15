@@ -11,6 +11,7 @@ import SwiftUI
 struct Beyond_EarthApp: App {
     @StateObject private var nasaVM = NasaVM()
     @StateObject private var eonetVM = EONETVM()
+    @StateObject private var solarSystemVM = SolarSystemVM()
     
     var body: some Scene {
         WindowGroup {
@@ -18,5 +19,6 @@ struct Beyond_EarthApp: App {
         }
         .environmentObject(NasaVM())
         .environmentObject(EONETVM())
+        .environmentObject(SolarSystemVM())
     }
 }

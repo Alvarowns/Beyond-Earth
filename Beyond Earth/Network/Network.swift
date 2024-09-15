@@ -44,4 +44,8 @@ struct Network: DataInteractor {
     func getEonetEvents() async throws -> EONETModel {
         try await getJSON(request: .get(url: .getEonetEvents()), type: EONETModel.self)
     }
+    
+    func getSolarSystem() async throws -> SolarSystem {
+        try await getJSON(request: .get(url: .getSolarSystem()), type: SolarSystem.self)
+    }
 }
