@@ -8,7 +8,7 @@
 import Foundation
 
 // No carga las imágenes porque la API no usa un servidor seguro https, en su lugar usa http y Apple no permite esto.
-let mtgCards = URL(string: "https://api.magicthegathering.io/v1/cards")!
+let mtgCards = URL(string: "XXXXXXXXXXXXXXXXXX")!
 
 extension URL {
     static func getCardsByName(name: String, page: Int, pageSize: Int) -> URL {
