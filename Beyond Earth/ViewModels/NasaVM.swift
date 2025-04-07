@@ -19,7 +19,7 @@ class NasaVM: ObservableObject {
     init() {
         Task {
             await getNasaAPOD()
-            await getNasaAsteroids()
+//            await getNasaAsteroids()
         }
     }
     
@@ -38,18 +38,18 @@ class NasaVM: ObservableObject {
         }
     }
     
-    func getNasaAsteroids() async {
-        do {
-            let asteroids = try await network.getNasaAsteorids()
-            await MainActor.run {
-                self.asteroids = asteroids
-            }
-        } catch {
-            await MainActor.run {
-                self.errorMsg = "\(error)"
-                self.showAlert.toggle()
-                print(errorMsg)
-            }
-        }
-    }
+//    func getNasaAsteroids() async {
+//        do {
+//            let asteroids = try await network.getNasaAsteorids()
+//            await MainActor.run {
+//                self.asteroids = asteroids
+//            }
+//        } catch {
+//            await MainActor.run {
+//                self.errorMsg = "\(error)"
+//                self.showAlert.toggle()
+//                print(errorMsg)
+//            }
+//        }
+//    }
 }

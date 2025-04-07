@@ -18,23 +18,23 @@ class SolarSystemVM: ObservableObject {
     
     init() {
         Task {
-            await getSolarSystem()
+//            await getSolarSystem()
         }
     }
     
-    func getSolarSystem() async {
-        do {
-            let solarSystem = try await network.getSolarSystem()
-            await MainActor.run {
-                self.bodies = solarSystem
-            }
-        } catch {
-            await MainActor.run {
-                
-                    self.errorMsg = "\(error)"
-                    self.showAlert.toggle()
-                    print(errorMsg)
-            }
-        }
-    }
+//    func getSolarSystem() async {
+//        do {
+//            let solarSystem = try await network.getSolarSystem()
+//            await MainActor.run {
+//                self.bodies = solarSystem
+//            }
+//        } catch {
+//            await MainActor.run {
+//                
+//                    self.errorMsg = "\(error)"
+//                    self.showAlert.toggle()
+//                    print(errorMsg)
+//            }
+//        }
+//    }
 }
